@@ -4,7 +4,6 @@
     --white-text-color: #ffffff;
     --accent-color: #2196f3;
     --black-logo-color: #000000;
-    --footer-text-color: rgba(255, 255, 255, 0.6);
     --white-background-color: #ffffff;
     --effect-background-color: #2f303a;
     --team-background-color: #f5f4fa;
@@ -47,6 +46,7 @@ ul {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    box-sizing: border-box;
     /* outline: 2px solid red; */
 }
 
@@ -132,6 +132,8 @@ ul {
     line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-nav-link:hover,
@@ -202,9 +204,9 @@ ul {
     display: flex;
 }
 
-.features-item:not(:last-child) {
+.features-item {
     margin-right: 30px;
-    max-width: 270px;
+    width: 270px;
 }
 
 .features-title {
@@ -256,10 +258,14 @@ ul {
     margin-right: 30px;
 }
 
+.team-workers {
+    padding: 30px 0px;
+}
+
 .team-worker {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.19px;
+    line-height: 1.19;
     text-align: center;
 }
 
@@ -285,11 +291,11 @@ ul {
 }
 
 .footer-contact-link {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--secondary-text-color, 0.6);
 }
 
 .footer-contact-info {
-    color: var(--white-text-color, 0.6);
+    color: var(--white-text-color);
 }
 
 .footer-contact-link:hover,
@@ -301,10 +307,11 @@ ul {
     margin-top: 20px;
 }
 
-.footer-contact-item,
+/*.footer-contact-item,
 .footer-contact-item {
     margin-top: 9px;
-}
+} 
+*/
 
 /* Портфоліо */
 
