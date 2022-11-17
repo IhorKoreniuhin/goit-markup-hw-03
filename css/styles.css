@@ -71,9 +71,9 @@ ul {
 }
 
 .footer-contact-link {
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
     color: var(--footer-text-color);
 }
 
@@ -187,11 +187,12 @@ ul {
     cursor: pointer;
 }
 
-.effect-btn:hover,
+/* .effect-btn:hover,
 .effect-btn:focus {
     background-color: var(--white-text-color);
     color: var(--accent-color);
 }
+*/
 
 /* Наші переваги */
 
@@ -254,8 +255,12 @@ ul {
     display: flex;
 }
 
-.team-item:not(:last-child) {
+.team-item {
     margin-right: 30px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-workers {
@@ -291,11 +296,16 @@ ul {
 }
 
 .footer-contact-link {
-    color: var(--secondary-text-color, 0.6);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-contact-info {
     color: var(--white-text-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .footer-contact-link:hover,
@@ -303,15 +313,20 @@ ul {
     color: var(--accent-color);
 }
 
+.footer-contact-info:hover,
+.footer-contact-info:focus {
+    color: var(--accent-color);
+}
+
 .footer-contact {
     margin-top: 20px;
 }
 
-/*.footer-contact-item,
+.footer-contact-item,
 .footer-contact-item {
-    margin-top: 9px;
+    margin-top: 12px;
 } 
-*/
+
 
 /* Портфоліо */
 
